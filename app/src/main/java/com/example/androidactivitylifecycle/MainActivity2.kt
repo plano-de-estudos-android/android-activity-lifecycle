@@ -1,9 +1,13 @@
-package com.example.androidactivitylifecycle
+package com.example.myapplication
 
 import android.os.Bundle
 import android.util.Log
 import android.widget.Toast
+import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
+import com.example.androidactivitylifecycle.R
+import kotlinx.android.synthetic.main.activity_main2.*
+
 
 class MainActivity2 : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -11,21 +15,17 @@ class MainActivity2 : AppCompatActivity() {
         Log.d("MainActivity2", "onCreate Called")
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main2)
-//        button2.setOnClickListener {
-//            val builder = AlertDialog.Builder(this)
-//            builder.setTitle("Alert")
-//            builder.setPositiveButton(
-//                R.string.back
-//            ) { _, _ ->
-//                val intent = Intent(this, MainActivity::class.java)
-//                startActivity(intent)
-//            }
-//            builder.setNegativeButton(R.string.no
-//            ) {
-//
-//            }
-//        }
+        button2.setOnClickListener {
 
+            AlertDialog.Builder(this)
+                .setTitle("Olá")
+                .setPositiveButton(
+                    "Voltar"
+                ) { dialog, which ->
+                }
+                .setNegativeButton("Cancelar", null)
+                .show()
+        }
     }
 
     override fun onStart() {
