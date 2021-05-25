@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Android Activity Lifecycle</string>
+    <string name="back">Voltar</string>
+    <string name="no">Cancela</string>
+</resources>
