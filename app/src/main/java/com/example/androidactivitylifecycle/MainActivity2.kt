@@ -23,6 +23,7 @@ class MainActivity2 : AppCompatActivity() {
                 ) { dialog, which ->
                 }
                 .setNegativeButton("Cancelar", null)
+                .setCancelable(false)
                 .show()
         }
     }
