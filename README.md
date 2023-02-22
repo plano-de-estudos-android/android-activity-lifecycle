@@ -6,11 +6,11 @@ Toda activity tem um ciclo de vida e conforme o usuário interage com o aplicati
 
 Seguindo o exemplo abaixo, quando o usuário entra na aplicativo e navega por ele o comportamento das activities será:
 
-Alt Text
+
 No ciclo de vida da activity existem alguns métodos: onCreate(), onPause(), onResume(), onStop(), onDestroy() e abaixo vou resumir de forma objetiva o que cada um faz.
 
-Alt Text
-onCreate()
+
+##onCreate()
 
 • Primeiro método a ser executado;
 
@@ -20,7 +20,7 @@ onCreate()
 
 • Define a interface gráfica (imagens, texto, botões que serão carregados no layout); • Inicialização de variáveis imutáveis.
 
-OnStart()
+##OnStart()
 
 • É chamado na inicialização da activity, após o onCreate, e também quando uma activity que estava em background volta a ter foco;
 
@@ -30,7 +30,7 @@ OnStart()
 
 • É nesse método que o aplicativo inicializa o código que mantém a UI (user interface).
 
-OnResume()
+##OnResume()
 
 • É o último método chamado antes do app estar pronto para o usuário interagir;
 
@@ -40,7 +40,7 @@ OnResume()
 
 • A maior parte das funcionalidades do app são implementadas neste método (listeners, funcionalidade como mapa, vídeos, etc.).
 
-onPause()
+##onPause()
 
 • Primeiro método executado quando a aplicação deixa de estar disponível;
 
@@ -52,13 +52,13 @@ onPause()
 
 • Ocorre quando o usuário clica no “voltar” ou “recentes”.
 
-OnStop()
+##OnStop()
 
 • Chamado quando a activity não está mais visível para o usuário;
 
 • Pode ser chamado várias vezes.
 
-onDestroy()
+##onDestroy()
 
 • Chamado antes da activity ser destruída;
 
