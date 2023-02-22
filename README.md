@@ -1,4 +1,4 @@
-# android-activity-lifecycle
+# Android Activity Lifecycle
 
 A activity de uma aplicação é basicamente a tela do aplicativo, é por onde o usuário interage com o aplicativo a partir do layout que aparece nesta tela.
 
